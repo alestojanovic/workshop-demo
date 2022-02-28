@@ -7,6 +7,16 @@
   pointer-events: none;
 }
 
+.App-button {
+  border-radius: 20px;
+  border-style: solid;
+  border-color: #61dafb;
+  padding: 10px;
+  background-color: transparent;
+  color: #61dafb;
+  font-weight: bold;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -22,10 +32,6 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
 }
 
 @keyframes App-logo-spin {
