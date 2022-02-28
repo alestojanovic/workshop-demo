@@ -1,9 +1,19 @@
-import React from 'react';
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import { fireEvent, render, screen } from "@testing-library/react";
+import App from "./App";
 
-test('renders learn react link', () => {
+test("Should show hide logo when button is toggled", () => {
+  // Renders the application
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+
+  // Grabs logo element and checks if it is in the DOM
+  const logoImg = screen.queryByAltText("logo");
+  expect(logoImg).toBeInTheDocument();
+
+  // Grabs button element, checks if it is in the DOM, and clicks on it
+  const toggleButton = screen.getByText("Click me");
+  expect(toggleButton).toBeInTheDocument();
+  fireEvent.click(toggleButton);
+
+  // Checks that logo element is NOT in the DOM after button is clicked
+  expect(logoImg).not.toBeInTheDocument();
 });
