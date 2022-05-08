@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/workshop-demo/static/css/main.1cf02d6a.css",
+    "main.js": "/workshop-demo/static/js/main.5ff9d9d3.js",
+    "static/media/logo.svg": "/workshop-demo/static/media/logo.e237793659e7317c81165e13f03857e0.svg",
+    "index.html": "/workshop-demo/index.html",
+    "main.1cf02d6a.css.map": "/workshop-demo/static/css/main.1cf02d6a.css.map",
+    "main.5ff9d9d3.js.map": "/workshop-demo/static/js/main.5ff9d9d3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1cf02d6a.css",
+    "static/js/main.5ff9d9d3.js"
+  ]
+}
